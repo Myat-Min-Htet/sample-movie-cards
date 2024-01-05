@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5a60b6;
+    margin: 0;
+
+}
+header{
+    padding: 8px;
+   display: flex;
+   justify-content: flex-end;
+  background-color: #22254b;}
+
+  
+.search{
+    background-color: transparent;
+    border:2px solid rgb(41, 91, 43);
+    border-radius: 50px;
+    font-family: inherit;
+    padding: o.5rem 1rem;
+    color: white;
+
+}
+.search::placeholder{
+    color: aqua;
+}
+.search:focus{
+    outline:none;
+   background-color:lightslategrey;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.movie{
+    width:200px;
+    margin:5px;
+    padding: 5px;
+    background-color: #22254b ;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position:relative;
+    overflow: hidden;
+    border-radius:5px ;
+   
+}
+.movie img{
+    width: 90%;
+    
+    
+}
+.movieInfo{
+    
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding 0.5rem 1rem 1rem;
+    letter-spacing:0.5px;
+}
+.movieInfo h3{
+    margin-top:0;
+} 
+.movieInfo span{
+    background-color:rgba(191, 102, 102, 0.333) ;
+    margin: 10px ;
+    border-radius: 3px;
+    font-weight:bold;
+    
+    
+
+
+}
+.movieInfo span.green{
+    color:rgb(120, 234, 133);
+
+}
+.movieInfo span.red{
+    color:red;
+
+}
+.movieInfo span.organe{
+    color:rgb(184, 123, 10);
+
+}
+.overview{
+    background-color: #eee;
+    padding: 2rem;
+    position:absolute;
+    left: 0;
+    bottom:0;
+    right:0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.4s ease-in;
+    
+
+}
+.movie:hover .overview{
+    transform: translateY(0);
+}
